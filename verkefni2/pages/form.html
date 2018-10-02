@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="is">
+    <head>
+        <meta charset="utf-8">
+        <title>Verkefni 2 - Form</title>
+    </head>
+    <body>
+        <h1>Form</h1>
+        <form action="form.html" method="post">
+            <fieldset>
+             <legend>Notandi</legend>
+             <div>
+               <label for="name">Notandanafn:</label>
+               <input type="text" id="name" placeholder="Jón Jónsson" required>
+             </div>
+            <div>
+                <label for="email">Netfang:</label>
+                <input type="email" id="email" placeholder="example@example.com" required>
+            </div>
+            <div>
+                <label for="password">Lykilorð:</label>
+                <input type="password" id="password" placeholder="Sláðu inn lykilorð" required>
+            </div>
+            <div>
+                <label for="confirm">Lykilorð aftur:</label>
+                <input type="password" id="confirm" placeholder="Lykilorð verða að vera eins" required>
+            </div>
+            </fieldset>
+            <fieldset>
+                <legend>Spurningar</legend>
+                <label>Kyn:</label>
+                <div>
+                    <label><input name="kyn" type="radio" value="kona"> Kona</label>
+                    <label><input name="kyn" type="radio" value="karl"> Karl</label>
+                    <label><input name="kyn" type="radio" value="annað"> Annað</label>
+                </div>
+                <div>
+                    <label>Aldur:
+                    <select name="aldur">
+                        <option value="none">-Vinsamlegast Veljið-</option>
+                        <option value="kid">Yngri en 13 ára</option>
+                        <option value="teen">13-20 ára</option>
+                        <option value="adult">21-65 ára</option>
+                        <option value="senior">Eldri en 65 ára</option>
+                    </select>
+                    </label>
+                </div>
+                <div>
+                    <label><input name="val" type="checkbox" value="senda" checked> Senda afrit af notendaupplýsingum á netfang.</label>
+                </div>
+                <div>
+                    <label for="comment">Athugasemdir:</label>
+                    <textarea name="comment" id="comment"></textarea>
+                </div>
+            </fieldset>
+
+            <div>
+               <button>Senda</button>
+            </div>
+        </form>
+
+        <hr>
+
+        <nav>
+            <ul>
+                <li><a href="https://notendur.hi.is/plp2/vefforritun/verkefni2">
+                    Forsíða
+                </a></li>
+                <li><a href="https://notendur.hi.is/plp2/vefforritun/verkefni2/pages/form.html">
+                    <strong>Form</strong>
+                </a></li>
+                <li><a href="https://notendur.hi.is/plp2/vefforritun/verkefni2/pages/tafla.html">
+                    Tafla
+                </a></li>
+                <li><a href="https://notendur.hi.is/plp2/vefforritun/verkefni2/pages/texti.html">
+                    Texti
+                </a></li>
+            </ul>
+        </nav>
+    </body>
+</html>

@@ -1,0 +1,163 @@
+html {
+    box-sizing: border-box;
+    font-size: 28px;
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #333;
+  color: #ddd;
+}
+
+/*-- header og postscript stillt --*/
+header, section.postscript {
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 2rem;
+
+    background: url(img/trees.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+.protection {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100vw;
+    height: 100vh;
+}
+
+.headerText, .postscriptText {
+    font-family: 'IM Fell DW Pica', serif;
+    text-align: center;
+    color: #333;
+}
+
+header h1 {
+    font-size: 9vh;
+    padding: 2em 1em 0 1em;
+}
+
+header h2 {
+    font-size: 6vh;
+    padding: 0.5em;
+}
+
+header p {
+    font-size: 3.5vh;
+    padding: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.postscriptText {
+    text-transform: uppercase;
+}
+
+.postscript h2 {
+    font-size: 6vh;
+    padding: 3.5em 0 2em 0;
+}
+
+.postscript p {
+    font-size: 3vh;
+    padding: 0 1em;
+}
+
+/*-- myndir stilltar og settar í stað hr -- */
+hr {
+    width: 100vw;
+    height: 60vh;
+    background: transparent no-repeat fixed;
+    background-size: cover;
+    border: none;
+}
+
+hr:nth-of-type(1) {
+    background-image: url(img/tree-fog.jpg);
+}
+
+hr:nth-of-type(2) {
+    background-image: url(img/castle.jpg);
+}
+
+hr:nth-of-type(3) {
+    background-image: url(img/hands.jpg);
+}
+
+hr:nth-of-type(4) {
+    background-image: url(img/moon.jpg);
+}
+
+/*-- Byrjum á sections --*/
+section.meginmal {
+    padding: 1rem 0;
+}
+
+section blockquote {
+    text-align: right;
+    padding: 1rem;
+    max-width: 50rem;
+    line-height: 2rem;
+    margin: 0 auto;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+}
+
+section blockquote cite {
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+section p + p {
+    text-indent: 2rem;
+}
+
+section p {
+    padding: 1rem;
+    max-width: 50rem;
+    line-height: 2rem;
+    margin: 0 auto;
+    font-family: 'Merriweather', serif;
+}
+
+section.meginmal p:first-of-type::first-letter {
+    float: left;
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 6rem;
+    padding-right: 0.2rem;
+}
+
+/*-- Stillum footer --*/
+footer {
+    background-color: #ddd;
+    color: #333;
+    padding: 1rem;
+    font-family: 'Merriweather', serif;
+}
+
+footer p {
+    max-width: 50rem;
+    line-height: 2rem;
+    margin: 0 auto;
+}
+
+footer ul * {
+    max-width: 50rem;
+    line-height: 1.2rem;
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+a {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+}
