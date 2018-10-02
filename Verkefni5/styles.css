@@ -14,6 +14,7 @@ html {
 
     font-family: 'Open Sans', helvetica, arial, sans-serif;
     font-size: 16px;
+    line-height: 22px;
 }
 
 main {
@@ -24,4 +25,56 @@ main {
 
 .cards {
     background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.card {
+    background: #fff;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    max-width: 470px;
+    max-height: 300px;
+    margin: 0 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin: 5px;
+}
+
+.card__title {
+    font-size: 1.375em;
+    margin: 10px 0 10px 5px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.card__img {
+    max-width: 150px;
+    margin: 0 0 0 5px;
+}
+
+.card__text {
+    overflow: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.card__lists {
+    display: flex;
+    list-style-type: none;
+    font-weight: bold;
+    flex-wrap: wrap;
+    margin: 10px 0 10px 5px;
+}
+
+li {
+    margin: 0 8px 0 0;
 }
