@@ -12,3 +12,4 @@ Tenglar á verkefni:
  * Verkefni 5: https://notendur.hi.is/plp2/vefforritun/Verkefni5/  
  * Verkefni 6: https://notendur.hi.is/plp2/vefforritun/Verkefni6/ 
  * Verkefni 7: https://notendur.hi.is/plp2/vefforritun/Verkefni7/
+ * Verkefni 8: https://notendur.hi.is/plp2/vefforritun/Verkefni8/
